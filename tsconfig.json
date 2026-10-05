@@ -1,0 +1,4 @@
+{
+  "compilerOptions": { "module": "commonjs", "target": "ES2022", "lib": ["ES2022", "DOM"], "strict": true, "esModuleInterop": true, "skipLibCheck": true, "noEmit": true, "types": ["node", "jest"] },
+  "include": ["server/**/*.ts", "functions-src/**/*.mts", "scripts/**/*.ts", "test/**/*.ts"]
+}

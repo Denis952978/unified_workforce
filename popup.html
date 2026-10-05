@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"><title>UnifiedWorkforce</title></head>
+<body>
+  <header><span class="mark">UW</span><b>UnifiedWorkforce</b></header>
+  <form id="login" hidden>
+    <p class="muted">Sign in once. Your work in Labelbox is then counted automatically.</p>
+    <label>Company address<input id="site" type="url" placeholder="https://yourcompany.netlify.app" required></label>
+    <label>Work email<input id="email" type="email" autocomplete="username" required></label>
+    <label>Password<input id="pw" type="password" autocomplete="current-password" required></label>
+    <p id="loginErr" class="err" hidden></p>
+    <button id="go">Sign in</button>
+  </form>
+  <main id="main" hidden>
+    <p id="who" class="muted"></p>
+    <div id="status" class="status"></div>
+    <div class="grid">
+      <div><span>Labelled</span><b id="lab">0</b></div><div><span>Reviewed</span><b id="rev">0</b></div>
+      <div><span>Working time</span><b id="time">0h 00m</b></div><div><span>Of target</span><b id="pct">—</b></div>
+    </div>
+    <p id="hint" class="muted small"></p>
+    <p id="err" class="err" hidden></p>
+    <footer><button id="refresh" class="ghost">Refresh</button><a id="open" target="_blank" rel="noopener">Open UnifiedWorkforce</a><button id="out" class="ghost">Sign out</button></footer>
+  </main>
+  <script src="popup.js"></script>
+</body></html>

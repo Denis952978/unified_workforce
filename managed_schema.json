@@ -1,0 +1,6 @@
+{
+  "type": "object",
+  "properties": {
+    "siteUrl": { "title": "UnifiedWorkforce address", "description": "Your UnifiedWorkforce site, e.g. https://acme-workforce.netlify.app. Prefills the sign-in screen.", "type": "string" }
+  }
+}
